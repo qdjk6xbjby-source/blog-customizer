@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "vite --host 0.0.0.0 --port 8080",
     "build": "vite build",
     "commit": "cz",
     "check": "stylelint && eslint src/",
@@ -12,7 +12,7 @@
     "lint": "npm run stylelint && npm run eslint && npm run prettier",
     "prepare": "husky",
     "prettier": "prettier \"./src/**/*.{js,jsx,ts,tsx,json,html,css,md}\" --write",
-    "preview": "vite preview",
+    "preview": "vite preview --host 0.0.0.0 --port 8080",
     "stylelint": "stylelint \"./src/**/*.scss\" --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
