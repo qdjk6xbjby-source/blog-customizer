@@ -17,7 +17,7 @@ export const App = (): React.JSX.Element => {
 
   return (
     <main
-      className={clsx(styles.main)}
+      className={clsx('index-module__main', styles.main)}
       style={
         {
           '--font-family': articleState.fontFamilyOption.value,
